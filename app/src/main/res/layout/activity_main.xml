@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Name"
+        android:inputType="text"
+        android:padding="8dp"
+        android:background="@drawable/et_bg"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Message"
+        android:lines="3"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:padding="8dp"
+        android:background="@drawable/et_bg"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selected"
+        android:text="Select"
+        android:textColor="@android:color/white"
+        android:onClick="clickBtn"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selected"
+        android:text="Upload File And Text"
+        android:textColor="@android:color/white"
+        android:onClick="clickBtn"/>
+
+</LinearLayout>
